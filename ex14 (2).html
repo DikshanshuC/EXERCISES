@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        color: white;
+        font-size: 40px;
+        font-weight: 700;
+        margin: 10px;
+        
+
+    }
+    .container{
+        display: flex;
+        width: auto;
+        height: 100vh;
+        background-color: black;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-content: center;
+
+    }
+    .container div{
+        display: flex;
+        justify-content: center;
+        align-content: space-evenly;
+        align-items:center ;
+        border: blue 10px double;
+    }
+    .d1{
+        position: relative;
+        /* left: 100px; */
+
+    }
+    .d1:hover{
+        transform: rotate(360deg) scale(2) translate(200px);
+        transition: 5s;
+        background-color: black;
+        color: white;
+        box-shadow: 0 0 20px white;
+    }
+    .d1 img{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+
+    }
+    span{
+        font-size: 30px;
+        color: rgb(230, 19, 19);
+        z-index: 10;
+    }
+</style>
+<body>
+    <div class="container black">
+        <div class="d1">
+            <img src="images/1.jpeg"><span >Where there is will there is a way</span></div>
+        <div class="d1"><img src="images/2.jpeg"><span >Practice is the key to success</span></div>
+        <div class="d1"><img src="images/10.jpeg"><span >Hardwork never waste just have faith</span></div>
+        <div class="d1"><img src="images/12.jpeg"><span >Always believe in yourself</span></div>
+        <div class="d1"><img src="images/15.jpeg"><span >Don't judge book by it's cover</span></div>
+        <div class="d1"><img src="images/21.jpeg"><span ></span></div>
+        <div class="d1"><img src="images/23.jpeg"><span ></span></div>
+    </div>
+</body>
+</html>
